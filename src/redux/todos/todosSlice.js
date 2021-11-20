@@ -21,12 +21,23 @@ export const todosSlice = createSlice({
       },
     ],
   },
-    reducers: {
-        addToDo: (state, action) => {
-            state.tasks.push(action.payload)
-      }
+  reducers: {
+      addToDo: (state, action) => {
+          console.log(action)
+      state.tasks.push(action.payload);
+    },
+
+    toggle: (state, action) => {
+      const toggleItem = state.tasks.find((task) => task.id === action.payload); // obje
+      toggleItem.isCompleted = !toggleItem.isCompleted;
+    },
+
+    deleteTodo: (state, action) => {
+      state.tasks =  state.tasks.filter((task) => task.id !== action.payload);
+      
+    },
   },
 });
 
-export const {addToDo} = todosSlice.actions
+export const { addToDo, toggle, deleteTodo} = todosSlice.actions;
 export default todosSlice.reducer;

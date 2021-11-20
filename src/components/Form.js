@@ -16,7 +16,8 @@ const Form = () => {
         text: inputValue,
         isCompleted: false,
       })
-    );
+      );
+      setInputValue("")
   };
   return (
     <form onSubmit={handleSubmit}>
