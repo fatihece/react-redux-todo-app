@@ -8,10 +8,6 @@ const TodoList = () => {
   const dispatch = useDispatch();
 
 
-  // useEffect(() => {
-  //   localStorage.setItem("my-todos",JSON.stringify( todos))
-  // }, [todos])
- 
   return (
     <div>
       {!todos.length && <h3 style={{ textAlign: "center", color: "#fff" }}>There is no todo to show!!!</h3>}
