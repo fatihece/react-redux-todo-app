@@ -8,11 +8,11 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ecf0f1;
+  background-color: #34495e;
 }
 
 .container {
-  max-width: 450px;
+  max-width: 500px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;

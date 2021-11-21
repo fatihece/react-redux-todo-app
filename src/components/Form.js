@@ -9,13 +9,15 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(
-      addToDo({
-        id: nanoid(),
-        text: inputValue,
-        isCompleted: false,
-      })
-    );
+    if (inputValue) {
+      dispatch(
+        addToDo({
+          id: nanoid(),
+          text: inputValue,
+          isCompleted: false,
+        })
+      );
+    }
     setInputValue("");
   };
   return (

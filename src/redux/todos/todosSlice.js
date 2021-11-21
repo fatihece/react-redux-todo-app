@@ -16,7 +16,7 @@ export const todosSlice = createSlice({
       },
       {
         id: 3,
-        text: "Watch a movie with family 👨‍👩‍👧‍👧",
+        text: "Watch a movie with family ",
         isCompleted: false,
       },
     ],
