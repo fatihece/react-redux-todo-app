@@ -10,7 +10,7 @@ const TodoList = () => {
 
   return (
     <div>
-      {!todos.length && <h3 style={{ textAlign: "center", color: "#fff" }}>There is no todo to show!!!</h3>}
+      {!todos.length && <h3 style={{ textAlign: "center", color: "#fff" }}>There is no todo to show !!!</h3>}
       <ul className="todo-list">
         {todos.map((todo) => {
           return (

@@ -17,6 +17,8 @@ const Form = () => {
           isCompleted: false,
         })
       );
+    } else {
+      alert("Please enter a todo !!!")
     }
     setInputValue("");
   };
