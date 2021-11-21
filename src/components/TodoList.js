@@ -17,6 +17,7 @@ const TodoList = () => {
               {" "}
               <input
                 type="checkbox"
+                style={{cursor:"pointer", width:"1rem", height:"1rem"}}
                 onClick={() => dispatch(toggle(todo.id))}
               />{" "}
               <span>{todo.text}</span>
