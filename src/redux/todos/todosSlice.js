@@ -6,17 +6,17 @@ export const todosSlice = createSlice({
     tasks: [
       {
         id: 1,
-        text: "cimbom",
+        text: "Finish the React project 💻",
         isCompleted: false,
       },
       {
         id: 2,
-        text: "fener",
+        text: "Go shopping 🛒",
         isCompleted: false,
       },
       {
         id: 3,
-        text: "mecidiyeköy",
+        text: "Watch a movie with family 👨‍👩‍👧‍👧",
         isCompleted: false,
       },
     ],

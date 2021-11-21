@@ -9,10 +9,11 @@ const TodoList = () => {
 
   return (
     <div>
-      <ul>
+      <ul className="todo-list">
         {todos.map((todo) => {
           return (
-            <li key={todo.id} className={todo.isCompleted ? "active" : ""}>
+            <li key={todo.id} 
+              className={`todo ${todo?.isCompleted ? "done" : ""}`}>
               {" "}
               <input
                 type="checkbox"
@@ -21,8 +22,9 @@ const TodoList = () => {
               <span>{todo.text}</span>
               <MdDeleteForever
                 className="delete-icon"
-                size="1.3em"
+                size="1.6em"
                 onClick={() => dispatch(deleteTodo(todo.id))}
+                style={{ color: "red", cursor: "pointer" }}
               />
             </li>
           );
