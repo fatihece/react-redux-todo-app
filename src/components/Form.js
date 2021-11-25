@@ -9,7 +9,7 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue) {
+    if (inputValue.trim() !=="") {
       dispatch(
         addToDo({
           id: nanoid(),
